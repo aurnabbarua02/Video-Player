@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:id="@+id/fragment01"
+        android:layout_weight="1"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:backgroundTint="@color/white"
+        app:itemIconTint="@color/cool_pink"
+        app:itemTextAppearanceActive="@color/black"
+        app:itemTextAppearanceInactive="@android:color/darker_gray"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/bottom_nav" />
+
+</LinearLayout>
+
+
+<!--    <VideoView-->
+<!--        android:id="@+id/videoPlayer"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" />-->
+<!--</RelativeLayout>-->
